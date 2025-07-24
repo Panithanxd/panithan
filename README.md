@@ -5,61 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="boy.png" type="image/png">
-    <link rel="Note" href="web.css" type="text/css">
-    <title>MY WEB NOTE</title>
+    <link rel="stylesheet" href="Note.css" type="text/css">
+    <title>MY WEB NOTE</title> 
 </head>
 
-
 <body>
-    <h1>Note</h1>
-    <h2>Absolute path</h2>
-    <h3>Externak link</h3>
-    <ul>
-        <li>
-            <a href="https://www.google.com">Google.com</a>
+
+    <section style="background-color: #e413c1; padding: 20px; text-align: center;">
+        <kbd style="font-size: 5em; color: rgb(6, 23, 255);">
+            <img src="ghost.png" alt="Home" style="width: 80px;">Web Note
+        </kbd>
+        <img src="ghost.png" alt="Home" style="width: 80px;">
+    </section>
+
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+
+        <li style="font-size: 2em; color: #f7de05;">
+            <img src="house.png" alt="Home" style="width: 30px;">
+            <a href="web.html" style="color: #f7de05;">Home</a>
         </li>
-        <li><a href="https://www.google.com"target="_blank">Google.com(new Tap)</a>
+
+        <li style="font-size: 2em; color: #f7de05;">
+            <img src="notepad_686234.png" alt="Note" style="width: 30px; height: 50px;">
+            <a href="note.html" style="color: #f7de05;">Note</a>
         </li>
-    </ul>
-</hr>
-    <h2>relative path</h2> 
-    <h3>Currant</h3>
-    <ul>
-        <li>
-            <a href="/Home/web.html">Home</a>
+
+        <li style="font-size: 2em; color: #f7de05;">
+            <img src="email.png" alt="Email" style="width: 30px; height: 50px;">
+            <a href="https://outlook.office.com/mail/?realm=utacgroup.com&login_hint=panithanda@utacgroup.com"
+                target="_blank" style="color: #f7de05;">Panithanda@utacgroup.com</a>
         </li>
-        <li><a href="/Note/note.html">Note</a>
+
+        <li style="font-size: 2em; color: #f7de05;">
+            <img src="phone.png" alt="Phone" style="width: 30px; height: 50px;">
+            <a href="tel:027145400" target="_blank" style="color: #f7de05;">02 714 5400</a> ต่อ EXT 1339
         </li>
+
+        <li style="font-size: 2em;">
+            <a href="https://www.google.com" style="color: #ffffff;">Google</a>
+        </li>
+
+        <li style="font-size: 2em;">
+            <a href="https://www.google.com" target="_blank" style="color: #ffffff;">Google (New Tab)</a>
+        </li>
+
     </ul>
 
-
-
-
-    <li style="font-size: 3em">หัวข้อ1</li>
-
-    <ul style="font-size: 2em;"> 1 .......</ul>
-    <ul>
-        <ol>
-            <ol style="font-size: 1.5em;"> 1.1 </ol>
-            <ol style="font-size: 1.5em;"> 1.2 </ol>
-            <ol style="font-size: 1.5em;"> 1.3</ol>
-            <ol style="font-size: 1.5em;"> 1.4</ol>
-            <ol style="font-size: 1.5em;"> 1.5</ol>
-    </ul>
-    </ul>
-    <li style="font-size: 3em">หัวข้อ2</li>
-    <ul style="font-size: 2em;"> 2.....</ul>
-    <ul>
-        <ol>
-            <ol style="font-size: 1.5em;">2.1</ol>
-            <ol style="font-size: 1.5em;">2.2</ol>
-            <ol style="font-size: 1.5em;">2.3</ol>
-            <ol style="font-size: 1.5em;">2.4</ol>
-            <ol style="font-size: 1.5em;">2.5</ol>
-        </ol>
-    </ul>
     <section class="footer" style="background-color: #7473aa; padding: 10px; text-align: center;">
         <p style="font-size: 2em; color: rgb(238, 6, 37);">Best regard</p>
-        <p style="font-size: 1.5em;color: #f7de05;"> Panithan Danwanichakul</p>
+        <p style="font-size: 1.5em; color: #f7de05;">Panithan Danwanichakul</p>
     </section>
+
 </body>
+</html>
