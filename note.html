@@ -5,96 +5,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="boy.png" type="image/png">
-    <link rel="stylesheet" href="web.css" type="text/css">
+    <link rel="Note" href="web.css" type="text/css">
     <title>MY WEB NOTE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 30px;
+            height: 4px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #444;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+        }
+
+        .side-menu a {
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #575757;
+        }
+    </style>
 </head>
+
 
 
 <body>
 
-    <section style="color: #7473aa;font-size: 2em;">Externak link</section>
+    <body>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="myMenu" class="side-menu">
+            <a href="web.html">🏠 Home</a>
+            <a href="note.html">📝 Note</a>
+            <a href="contact.html">🗨️Contact</a>
+            <a href="https://teams.microsoft.com/l/chat/0/0?users=panithanda@utacgroup.com">💬 Chat Teams</a>
+            <a href="mailto:panithanda@utacgroup.com">📧 Outlook Mail</a>
+            <a href="tel.027145400" style="font-size: 15px;"> 📞 02 714 5400 ต่อ 1339</a>
+        </div>
 
-    <ul>
-        <li>
-            <a href="https://www.google.com"style="color: #f1e20b;">Google.com</a>
-            
-        </li>
-        
-        <a href="https://www.google.com" target="_blank" style="color: #f1e20b;">Google.com(new Tap)</a>
-            
-        </li>
-    </ul>
-    <hr>
-    <h3>Currant</h3>
-    
-    <ul>
-        <li> 
-            <section 
-                style="font-size: 20px; color: rgb(14, 240, 228);">
-                <img src="house.png" alt="Home" style="width: 20px; height: 20px;">
-                <a href="web.html">Home </a>    
+        <section>
+            <section style="background-color: #7473aa;width: 100%; padding: 20px; text-align: center;">
+
+                <a style="font-size: 50px; color: #fa5757;text-align: center;"> Note </a>
             </section>
-        </li>
-    </ul>
 
-    <ul>  
-        <li>    
-            <section 
-                style="font-size: 20px; color: rgb(14, 240, 228);">
-                <img src="notepad_686234.png" alt="Note" style="width: 20px; height: 20px;">
-                <a href="note.html">Note</a>
+
+            <section
+                style="font-size: 20px;display: flex;align-items: center;gap: 10px;list-style: none; color: rgb(14, 240, 228);">
+                <img src="house.png" alt="Home" style=" width:30px; height: 30px;">
+                <button onclick="location.href='web.html'"
+                    style="color: #f7de05;background-color: rgb(35, 153, 255);margin: 0;padding: 2px 6 px;border: 2px solid black;border-radius: 4px;cursor: pointer;">Home</a>
             </section>
-        </li>
-    </ul> 
 
-    <ul>   
-        <li>
-            <section 
-                style="font-size: 20px; color: rgb(14, 240, 228);">
-                <img src="contact-us_7269995.png" alt="Contact" style="width: 20px; height: 20px;"> 
-                <a href="contact.html">Contact</a>  
+
+            <section
+                style="font-size: 20px;display: flex;align-items: center;gap: 10px;list-style: none; color: rgb(13, 247, 235);">
+                <img src="notepad_686234.png" alt="Note" style="width: 30px; height: 30px;">
+                <a style="color: #f7de05;background-color: rgb(35, 153, 255);">Note</a><br>
             </section>
-        </li>
-    </ul>
-<hr>
+
+            <section
+                style="font-size: 20px;display: flex;align-items: center;gap: 10px;list-style: none; color: rgb(14, 240, 228);">
+                <img src="contact-us_7269995.png" alt="Contact" style="width: 30px; height: 30px;">
+                <button onclick="location.href='contact.html'"
+                    style="color: #f7de05;background-color: rgb(35, 153, 255);padding:2px 6px;margin: 0;cursor:pointer;border:2px solid black;border-radius: 4px;">Contact</a>
+            </section>
+            <hr>
+
+        </section>
+        <br>
+
+        <section style=" font-size: 20px; color: rgb(0, 54, 233);background-color: #f7de05;display: inline;">Externak
+            link
+        </section>
+        <br><br>
 
 
+        <section>
+            <img src="google-icon-isolated-white-background_1273375-828.jpg"
+                alt="google-icon-isolated-white-background_1273375-828"
+                style="width: 30px; height: 30px;vertical-align: middle;">
 
-<ul style="font-size: 2em">
-    <li>หัวข้อ1
-        <ul>
-            <li style="font-size: 1.5em;">1 .......
-                <ol>
-                    <li style="font-size: 1em;">1.1</li>
-                    <li style="font-size: 1em;">1.2</li>
-                    <li style="font-size: 1em;">1.3</li>
-                    <li style="font-size: 1em;">1.4</li>
-                    <li style="font-size: 1em;">1.5</li>
-                </ol>
-            </li>
+            <button onclick="location.href='https://www.google.com'" style="color: #ff57ff;
+                        background-color: aquamarine;
+                        padding: 2px 6px;
+                        margin: 0;
+                        font:inherit;
+                        cursor: pointer;
+                        border:solidblack 1px;
+                        border-radius: 4px;">
+
+                Google.com
+            </button>
+            <br>
+            <img src="google-icon-isolated-white-background_1273375-828.jpg"
+                alt="google-icon-isolated-white-background_1273375-828"
+                style="width: 30px; height: 30px;vertical-align: middle;">
+            <button onclick="window.open('https://www.google.com', '_blank')" style="color: #ff57ff;
+                        background-color: aquamarine;
+                        padding: 2px 6px;
+                        margin: 0;
+                        font:inherit;
+                        cursor: pointer;
+                        border:solidblack 1px;
+                        border-radius: 4px;">
+                Google.com(new Tap)
+            </button>
+        </section>
+        <br><br>
+        </hr>
         </ul>
-    </li>
-</ul>
+        <div>
+            <style>
+                .accordion {
+                    background-color: #0d0e0d;
+                    color: white;
+                    cursor: pointer;
+                    padding: 14px;
+                    width: 100%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 1.2em;
+                    transition: 0.3s;
+                }
 
-<ul style="font-size: 2em">
-    <li>หัวข้อ2
-        <ul>
-            <li style="font-size: 1.5em;">2 .......
-                <ol>
-                    <li style="font-size: 1em;">2.1</li>
-                    <li style="font-size: 1em;">2.2</li>
-                    <li style="font-size: 1em;">2.3</li>
-                    <li style="font-size: 1em;">2.4</li>
-                    <li style="font-size: 1em;">2.5</li>
-                </ol>
-            </li>
-        </ul>
-    </li>
-</ul>
+                .accordion::after {
+                    content: '▼';
+                    float: right;
+                }
+
+                .accordion.active::after {
+                    content: '▲';
+                }
+
+                .panel {
+                    padding: 0 18px;
+                    display: none;
+                    background-color: #eee;
+                    overflow: hidden;
+                }
+            </style>
+
+            <button class="accordion">หัวข้อที่ 1</button>
+            <div class="panel">
+                <p>เนื้อหาที่ซ่อนอยู่ในหัวข้อที่ 1</p>
+            </div>
+
+            <button class="accordion">หัวข้อที่ 2</button>
+            <div class="panel">
+                <p>เนื้อหาที่ซ่อนอยู่ในหัวข้อที่ 2</p>
+            </div>
+
+            <script>
+                const acc = document.querySelectorAll(".accordion");
+                acc.forEach(btn => {
+                    btn.addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        const panel = this.nextElementSibling;
+                        panel.style.display = panel.style.display === "block" ? "none" : "block";
+                    });
+                });
+            </script>
+
+            </section>
+        </div><br><br><br><br>
+        <section class="footer" style="background-color: #7473aa; padding: 1px; text-align: center;">
+            <p style="font-size: 2em; color: rgb(238, 6, 37);">Best regard</p>
+            <p style="font-size: 1.5em;color: #f7de05;"> Panithan Danwanichakul</p>
+        </section>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("myMenu");
+                if (menu.style.width === "250px") {
+                    menu.style.width = "0";
+                } else {
+                    menu.style.width = "250px";
+                }
+            }
+        </script>
 
 
-    <section class="footer" style="background-color: #7473aa; padding: 10px; text-align: center;">
-        <p style="font-size: 2em; color: rgb(238, 6, 37);">Best regard</p>
-        <p style="font-size: 1.5em;color: #f7de05;"> Panithan Danwanichakul</p>
-    </section>
-</body>
+
+    </body>

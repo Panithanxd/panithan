@@ -7,37 +7,146 @@
     <link rel="icon" href="boy.png" type="image/png">
     <link rel="Note" href="Note.css" type="text/css">
     <title>MY WEB NOTE</title>
+    <meta charset="UTF-8">
+    <title>Hamburger Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 30px;
+            height: 4px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #444;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+        }
+
+        .side-menu a {
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #575757;
+        }
+    </style>
 </head>
 
 <body>
-
-
-    <section style="background-color: aqua;padding: 50 px ;">
-        <section style="font-size: 20px; color: rgb(14, 240, 228);" rel="image" href="house.png" type="image/png"
-            style="list-style-type: none; padding: 0; margin: 0;">
-            <img src="house.png" alt="Home" style="width: 30px; height: 30px;"><a href="/Home/web.html"
-                style="color: #f7de05;">Home</a>
-            <img src="subscribe-button-5244_256.gif" alt="subscribe-button-5244_256"
-                style="width: 200px; height: 100px;float: inline-end;">
-        </section>
-
-        <section style="font-size: 20px; color: rgb(14, 240, 228);">
-            <img src="notepad_686234.png" alt="Note" style="width: 30px; height: 30px;">
-            <a href="/Note/note.html">Note</a>
-        </section>
-        </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div id="myMenu" class="side-menu">
+        <a href="web.html">🏠 Home</a>
+        <a href="note.html">📝 Note</a>
+        <a href="contact.html">🗨️Contact</a>
+        <a href="https://teams.microsoft.com/l/chat/0/0?users=panithanda@utacgroup.com">💬 Chat Teams</a>
+        <a href="mailto:panithanda@utacgroup.com">📧 Outlook Mail</a>
+        <a href="tel.027145400" style="font-size: 15px;"> 📞 02 714 5400 ต่อ 1339</a>
+    </div>
 
 
 
-        <section style="font-size: 20px; color: rgb(14, 240, 228);">
-            <img src="contact-us_7269995.png" alt="Contact" style="width: 30px; height: 30px;">
-            <a href="/contact/contact.html">Contact</a>
+    <section style="background-color: rgb(121, 91, 255);padding: 50 px;">
+        <strong style="font-size: 20px; color: rgb(14, 240, 228);vertical-align: middle;margin-right: 8px;" rel="image"
+            href="house.png" type="image/png" style="list-style-type: none; padding: 0; margin: 0;">
+            <img src="house.png" alt="Home" style="width: 30px; height: 30px;"><button
+                onclick="location.href='web.html'" style="margin: 0;
+                cursor: pointer;
+                border: 1px solid rgb(0, 0, 0);
+                padding: 3px 20px;
+                color: #f00404;
+                border-radius: 4px;
+                font-size: 20px;
+                background-color: #818185;
+                ">Home</button>
 
-        </section>
+        </strong>
+
+        <strong
+            style="font-size: 20px; color: rgb(235, 252, 2);vertical-align: middle;margin-right: 8px;list-style-type: none;padding: 0;margin: 0;display: flex;align-items: center;gap: 0px;">
+            <img src="notepad_686234.png" alt="Note" style="width: 30px; height: 30px; ">
+            <button onclick="location.href='note.html'" style="margin: 0;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid black;
+            padding: 3px 20px;
+            color: #ff0000;
+            background-color: #818185;
+            font-size: 20px;
+            ">Note</button>
+        </strong>
+        <div>
+            <section>
+                <img src="contact-us_7269995.png" alt="Contact"
+                    style="width: 30px; height: 30px;vertical-align: middle;">
+                <strong style="font-size: 20px;color: #df0a0a;vertical-align: middle;">
+
+                    Contact </strong>
+            </section>
+        </div>
+
+
+        <section style="color:#7473aa;"> </section>
     </section>
-    <hr><br><br><br><br><br><br>
+    </section>
 
-
+    <hr>
+    <section style="background-color: #f5e556;font-size: 50px;color: #0072C6;display:inline">Contact
+        <img src="contact-us_7269995.png" alt="contact" style="width: 40px;">
+    </section>
+    <hr>
+    <br><br>
+    <section>
+        <a href="mailto:panithanda@utacgroup.com"
+            style="padding: 10px 20px; background-color: #0072C6; color: white; text-decoration: none; border-radius: 6px;font-size: 20px;">
+            <img src="outlook.webp" alt="Email" style="width: 30px; height: 30px; vertical-align: middle;">
+            ติดต่อผ่าน Outlook
+        </a>
+    </section>
+    <br>
+    <a href="https://teams.microsoft.com/l/chat/0/0?users=panithanda@utacgroup.com" target="_blank"
+        style="padding: 10px 20px; background-color: #464775; color: white; text-decoration: none; border-radius: 8px;font-size: 20px;">
+        <img src="team.png" alt="Microsoft Teams" style="width: 30px; height: 30px; vertical-align: middle;">
+        แชทผ่าน Microsoft Teams 💬
+    </a>
+    <br>
+    <br>
+    <strong>
+        <a href="tel:027145400"
+            style="display: inline-flex;align-items: center;gap: 8px;padding:  10px 20px; background-color: rgb(42, 128, 34);text-decoration: none;border-radius: 8px;font-size: 20px; color: #fdfdfd;">
+            <img src="phone.png" alt="Phone" style="width: 30px; height: 30px; vertical-align: middle;">
+            โทร: 02 714 5400 ต่อ; 1339
+        </a>
+    </strong>
 
 
 
@@ -45,9 +154,21 @@
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <section class="footer" style="background-color: #7473aa; padding: 10px; text-align: center;">
+    <section class=" footer" style="background-color: #7473aa; padding: 10px; text-align: center;">
         <p style="font-size: 2em; color: rgb(238, 6, 37);">Best regard</p>
         <p style="font-size: 1.5em;color: #f7de05;"> Panithan Danwanichakul</p>
     </section>
     </h6>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("myMenu");
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+            } else {
+                menu.style.width = "250px";
+            }
+        }
+    </script>
+
 </body>
