@@ -53,7 +53,13 @@
         .side-menu a:hover {
             background-color: #575757;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
+
 </head>
 
 <body>
