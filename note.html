@@ -106,127 +106,130 @@
             </section>
             <hr>
 
-        </section>
-        <br>
-
-        <section style=" font-size: 20px; color: rgb(0, 54, 233);background-color: #f7de05;display: inline;">Externak
-            link
-        </section>
-        <br><br>
-
-
-        <section>
-            <img src="google-icon-isolated-white-background_1273375-828.jpg"
-                alt="google-icon-isolated-white-background_1273375-828"
-                style="width: 30px; height: 30px;vertical-align: middle;">
-
-            <button onclick="location.href='https://www.google.com'" style="color: #ff57ff;
-                        background-color: aquamarine;
-                        padding: 2px 6px;
-                        margin: 0;
-                        font:inherit;
-                        cursor: pointer;
-                        border:solidblack 1px;
-                        border-radius: 4px;">
-
-                Google.com
-            </button>
-            <br>
-            <img src="google-icon-isolated-white-background_1273375-828.jpg"
-                alt="google-icon-isolated-white-background_1273375-828"
-                style="width: 30px; height: 30px;vertical-align: middle;">
-            <button onclick="window.open('https://www.google.com', '_blank')" style="color: #ff57ff;
-                        background-color: aquamarine;
-                        padding: 2px 6px;
-                        margin: 0;
-                        font:inherit;
-                        cursor: pointer;
-                        border:solidblack 1px;
-                        border-radius: 4px;">
-                Google.com(new Tap)
-            </button>
-        </section>
-        <br><br>
-        </hr>
-        </ul>
-        <div>
-            <style>
-                .accordion {
-                    background-color: #0d0e0d;
-                    color: rgb(212, 27, 27);
-                    cursor: pointer;
-                    padding: 14px;
-                    width: 100%;
-                    border: none;
-                    text-align: left;
-                    outline: none;
-                    font-size: 1.2em;
-                    transition: 0.3s;
-                }
-
-                .accordion::after {
-                    content: '▼';
-                    float: right;
-                }
-
-                .accordion.active::after {
-                    content: '▲';
-                }
-
-                .panel {
-                    padding: 0 18px;
-                    display: none;
-                    background-color: #ffffff;
-                    overflow: hidden;
-                }
-            </style>
-
-            <button class="accordion">หัวข้อที่ 1</button>
-            <div class="panel">
-                <button class="accordion">หัวข้อ1.1</button>
-                <div class="panel">
-                    <button class="accordion">เนื้อหา</button>
-                </div>
-
-                <button class="accordion">หัวข้อ1.2</button>
-                <div class="panel">
-                    <button class="accordion">เนื้อหา</button>
-                </div>
-            </div>
-
-            <button class="accordion">หัวข้อที่ 2</button>
-            <div class="panel">
-                <button class="accordion">หัวข้อ2.1 Solid state relay</button>
-                <div class="panel">
-                    <button class="accordion">เนื้อหา solid state relay</button>
-                <div class="panel">
-                <a  href="https://utacgroupsg-my.sharepoint.com/:x:/r/personal/panithanda_utacgroup_com/Documents/Solid%20State%20relay%20compare.xlsx?d=w2ce6879b60d24b079936aa7ed38e0bd2&csf=1&web=1&e=86IhUC"target="_bank">(Excel Solid State relay compare)</a>
-                </div>
-                </div>
-                
-                    <button class="accordion">หัวข้อ2.2 Test Heater</button>
-                <div class="panel">
-
-                    <button class="accordion">เนื้อหา Test Heater</button>
-                    <div class="panel">
-                <a href="https://utacgroupsg-my.sharepoint.com/:x:/r/personal/panithanda_utacgroup_com/_layouts/15/Doc.aspx?sourcedoc=%7B2C19DD1A-B380-431C-96EC-1E089F5C0CCC%7D&file=Test%20Heater%20Jul05%2C2025.xlsx&action=default&mobileredirect=true"target="_bank;list-s">(Excel Test Heater)</a>
-                </div>
-            </div>
-
-
-
-            <script>
-                const acc = document.querySelectorAll(".accordion");
-                acc.forEach(btn => {
-                    btn.addEventListener("click", function () {
-                        this.classList.toggle("active");
-                        const panel = this.nextElementSibling;
-                        panel.style.display = panel.style.display === "block" ? "none" : "block";
-                    });
-                });
-            </script>
-
+            <section style=" font-size: 20px; color: rgb(0, 54, 233);background-color: #f7de05;display: inline;">
+                Externak
+                link
             </section>
+            <video src="dino.mp4" width="200" style="float: inline-end;" autoplay muted loop>
+            </video>
+            <br><br>
+
+
+            <section>
+                <img src="google-icon-isolated-white-background_1273375-828.jpg"
+                    alt="google-icon-isolated-white-background_1273375-828"
+                    style="width: 30px; height: 30px;vertical-align: middle;">
+
+                <button onclick="location.href='https://www.google.com'" style="color: #ff57ff;
+                        background-color: aquamarine;
+                        padding: 2px 6px;
+                        margin: 0;
+                        font:inherit;
+                        cursor: pointer;
+                        border:solidblack 1px;
+                        border-radius: 4px;">
+
+                    Google.com
+                </button>
+                <br>
+                <img src="google-icon-isolated-white-background_1273375-828.jpg"
+                    alt="google-icon-isolated-white-background_1273375-828"
+                    style="width: 30px; height: 30px;vertical-align: middle;">
+                <button onclick="window.open('https://www.google.com', '_blank')" style="color: #ff57ff;
+                        background-color: aquamarine;
+                        padding: 2px 6px;
+                        margin: 0;
+                        font:inherit;
+                        cursor: pointer;
+                        border:solidblack 1px;
+                        border-radius: 4px;">
+                    Google.com(new Tap)
+                </button>
+            </section>
+
+            <br><br>
+            </hr>
+            </ul>
+            <div>
+                <style>
+                    .accordion {
+                        background-color: #0d0e0d;
+                        color: rgb(212, 27, 27);
+                        cursor: pointer;
+                        padding: 14px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 1.2em;
+                        transition: 0.3s;
+                    }
+
+                    .accordion::after {
+                        content: '▼';
+                        float: right;
+                    }
+
+                    .accordion.active::after {
+                        content: '▲';
+                    }
+
+                    .panel {
+                        padding: 0 18px;
+                        display: none;
+                        background-color: #ffffff;
+                        overflow: hidden;
+                    }
+                </style>
+
+                <button class="accordion">หัวข้อที่ 1</button>
+                <div class="panel">
+                    <button class="accordion">หัวข้อ1.1</button>
+                    <div class="panel">
+                        <button class="accordion">เนื้อหา</button>
+                    </div>
+
+                    <button class="accordion">หัวข้อ1.2</button>
+                    <div class="panel">
+                        <button class="accordion">เนื้อหา</button>
+                    </div>
+                </div>
+
+                <button class="accordion">หัวข้อที่ 2</button>
+                <div class="panel">
+                    <button class="accordion">หัวข้อ2.1 Solid state relay</button>
+                    <div class="panel">
+                        <button class="accordion">เนื้อหา solid state relay</button>
+                        <div class="panel">
+                            <a href="https://utacgroupsg-my.sharepoint.com/:x:/r/personal/panithanda_utacgroup_com/Documents/Solid%20State%20relay%20compare.xlsx?d=w2ce6879b60d24b079936aa7ed38e0bd2&csf=1&web=1&e=86IhUC"
+                                target="_bank">(Excel Solid State relay compare)</a>
+                        </div>
+                    </div>
+
+                    <button class="accordion">หัวข้อ2.2 Test Heater</button>
+                    <div class="panel">
+
+                        <button class="accordion">เนื้อหา Test Heater</button>
+                        <div class="panel">
+                            <a href="https://utacgroupsg-my.sharepoint.com/:x:/r/personal/panithanda_utacgroup_com/_layouts/15/Doc.aspx?sourcedoc=%7B2C19DD1A-B380-431C-96EC-1E089F5C0CCC%7D&file=Test%20Heater%20Jul05%2C2025.xlsx&action=default&mobileredirect=true"
+                                target="_bank;list-s">(Excel Test Heater)</a>
+                        </div>
+                    </div>
+
+
+
+                    <script>
+                        const acc = document.querySelectorAll(".accordion");
+                        acc.forEach(btn => {
+                            btn.addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                const panel = this.nextElementSibling;
+                                panel.style.display = panel.style.display === "block" ? "none" : "block";
+                            });
+                        });
+                    </script>
+
+        </section>
         </div><br><br><br><br>
         <section class="footer" style="background-color: #7473aa; padding: 1px; text-align: center;">
             <p style="font-size: 2em; color: rgb(238, 6, 37);">Best regard</p>
